@@ -1,0 +1,18 @@
+
+
+
+
+
+
+Accoustic Emission (AE) signals were recorded from a real milling machine setup, as shown in Fig. 4.The experimental setup is shown in Fig. 4(a), and its schematic representation is shown in Fig.4(b). The milling operations were conducted on an INTER-SIEG X1 Micro Mill Drill, which is built from cast iron and functions similarly to a small-scale pillar drill. The primary focus of this experiment was on straight parallel milling operations performed on steel workpieces, a process typically used for shaping and machining hard materials. FIve steel pieces, each with dimensions of 20mm, 35mm, and 35mm, were utilized during the experiment. The initial state of these workpirces is shown in Fig. 5(a), with a processed example displayed in Fig. 5(b). 
+
+
+To monitor the AE signals, R15I-AST from MISTRAS, Inc., USA, were attached to the milling machine using industrial-grade adhesives. The signals were collected using NI-9223 data acquisition system from National Instruments, with custom software developed by the Ulsan Idustrial Artificial Intelligence Laboratory in Python. The AE data were collected at a high sampling frequency of 1 MHz, with each 1-second sample containing 1 million data points. Before the actual data acquisition began, the HSU-Nelson test was conducted to verify the proper functioning of the AE sensors. Both sensors successfully detected AE events during the test, confirming their readiness for the experiment. 
+
+
+Two AE sensors were used in the experiment: the main sensor was fastened to the spindle, while a secondary sensor was attached to the motor. The sensor on the motor acted as a guard transducer, as depicted in Fig.4, which helped to filter out irrelevant signals and noise, ensuring that the primary sensor focused on collecting vital data related to the tool, bearing, and gear conditions. 
+
+
+The data collection began under normal operating conditions of the milling machine. According to ISO-8688-2 standards, a tool's lifespan is characterized by an average flank wear of 0.3mm. However, in practice, tools may fail catastropically even in the early stages of their life, especially when machining hard materials. To simulate these conditions, the tool, made of carbide, was intentionally worn to an average of 0.3mm, and data were collected under these defective conditions. Additionally, an initial defect was introduced into the outer race of the bearing supporting the tool, and AE signals were recorded during machining. A small metal fragment was also removed from one of the gear teeth, which transmits torque from the motor to the spindle, creating a fault, and AE signals were similarly recorded during operation.
+
+In total, 40 samples were recorded for each operating condition. Table 2 provides an overview of the dataset acquired from the milling machine. For ease of reference, the normal condition is labeled as NC, while the tool defect, bearing defect, and gear defect are labeled as TC, BC, and GC, respectively. A 1-second AE signal recorded under NC, TC, BC, and GC conditions is depicted in Fig. 6. The defective tool, bearing, and gear components used in the experiment are shown in Fig. 7(a), (b), and (c).
